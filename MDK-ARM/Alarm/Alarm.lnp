@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"alarm\startup_stm32l476xx.o"
+"alarm\main.o"
+"alarm\stm32l4xx_it.o"
+"alarm\stm32l4xx_hal_msp.o"
+"alarm\stm32l4xx_hal_rtc.o"
+"alarm\stm32l4xx_hal_rtc_ex.o"
+"alarm\stm32l4xx_hal_tim.o"
+"alarm\stm32l4xx_hal_tim_ex.o"
+"alarm\stm32l4xx_hal.o"
+"alarm\stm32l4xx_hal_i2c.o"
+"alarm\stm32l4xx_hal_i2c_ex.o"
+"alarm\stm32l4xx_hal_rcc.o"
+"alarm\stm32l4xx_hal_rcc_ex.o"
+"alarm\stm32l4xx_hal_flash.o"
+"alarm\stm32l4xx_hal_flash_ex.o"
+"alarm\stm32l4xx_hal_flash_ramfunc.o"
+"alarm\stm32l4xx_hal_gpio.o"
+"alarm\stm32l4xx_hal_dma.o"
+"alarm\stm32l4xx_hal_dma_ex.o"
+"alarm\stm32l4xx_hal_pwr.o"
+"alarm\stm32l4xx_hal_pwr_ex.o"
+"alarm\stm32l4xx_hal_cortex.o"
+"alarm\system_stm32l4xx.o"
+--library_type=microlib --strict --scatter "Alarm\Alarm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Alarm.map" -o Alarm\Alarm.axf
